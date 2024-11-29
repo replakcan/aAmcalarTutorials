@@ -9,6 +9,7 @@
   "author": "Alper Mutlu Akcan <alper.makcan@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "ansi-red": "^0.1.1"
+    "ansi-red": "^0.1.1"  
   }
+
 }

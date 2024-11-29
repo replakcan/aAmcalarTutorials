@@ -9,8 +9,6 @@ module.exports = class Person {
     }
 
     static create(obj, param2, param3) { // belongs to the Person class
-        console.log("param2: ", param2); // index
-        console.log("param3: ", param3); // the whole array
         return new Person(obj.name, obj.age);
     }
 }

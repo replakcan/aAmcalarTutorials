@@ -6,15 +6,21 @@ console.log("Hello World");
 const alper = new Person("Alper", 28);
 const zubizaretta = new Person("Zubi", 23);
 
+/* window.addEventListener('click', (event) => {
+    alert('hello') //callback function
+}) */
+
 const instructors = [alper, zubizaretta];
 
-Database.save(instructors);
+Database.save(instructors, (err) => 
+    console.log("ERROR:", err));
 
-const loadedInstructors = Database.load();
+
+console.log("are we there yet???????");
+/* const loadedInstructors = Database.load();
 
 const convertedInstructors = loadedInstructors.map(Person.create);
-convertedInstructors[0].sayName();
-
+console.log(convertedInstructors); */
 
 /* const firstPerson = new Person(loadedInstructors[0].name, loadedInstructors[0].age);  */// this is not recommended because I have to know all properties of Person to create a new Person this way
 
