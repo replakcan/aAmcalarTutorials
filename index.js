@@ -15,8 +15,11 @@ const instructors = [alper, zubizaretta];
 Database.save(instructors, (err) => 
     console.log("ERROR:", err));
 
+setInterval(() => {
+    console.log("are we there yet?")
+}, 1000);
 
-console.log("are we there yet???????");
+console.log("abi geldik mi");
 /* const loadedInstructors = Database.load();
 
 const convertedInstructors = loadedInstructors.map(Person.create);
